@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff; /* Warna latar belakang lembut */
+  color: #333;
+  overflow: hidden; /* Sembunyikan scrollbar */
+}
+
+#container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Warna hijau */
+  animation: bounce 1s infinite; /* Animasi bounce */
+}
+
+#message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555; /* Warna abu-abu gelap */
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #4CAF50; /* Garis tepi hijau */
+  animation: rotate 5s linear infinite; /* Animasi rotasi */
+}
+
+button {
+  background-color: #4CAF50; /* Hijau */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 10px;
+  animation: pulse 1s infinite; /* Animasi pulse */
+}
+
+button:hover {
+  background-color: #45a049; /* Hijau lebih gelap saat hover */
+}
+
+#surprise {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 20px;
+  animation: shake 0.5s infinite; /* Animasi shake */
+}
+
+/* Animasi */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  70% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  90% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+/* Animasi tambahan untuk gambar */
+@keyframes zoomIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
